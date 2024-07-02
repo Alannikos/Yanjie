@@ -1,2 +1,57 @@
-# Yanjie An-English-Intelligent-Learning-Assistant
-Yanjie is an English intelligent learning assistant that integrates situational dialogues, simulated exams, AI companion reading, AI companion writing, and AI translation, committed to providing users with a comprehensive English learning experience
+**项目名称：** 言界 - 英语智能学习助手
+
+
+
+**项目概述：** 言界是一款综合性的英语智能学习助手，旨在通过情景对话、模拟考试、AI伴读、AI伴写和AI翻译等功能，为用户提供沉浸式的英语学习体验。该项目将基于由上海人工智能实验室的Xtuner，LMDeploy等工具，结合TTS，ASR，并使用InternLM2系列模型进行实现。
+
+
+
+**🔥项目目标：**
+
+1. 提供情景对话和话题讨论，增强用户的口语交流能力。
+2. 通过模拟考试，帮助用户评估和提高英语水平。
+3. 结合AI技术，提供个性化的伴读和伴写服务。
+4. 实现AI翻译功能，促进跨语言交流。
+
+
+
+**🌟主要功能：**
+
+1. **普通对话：** 支持日常语音对话。
+2. **情景对话：** 利用图片引导大模型进行相关主题对话，模拟真实场景。
+3. **话题讨论：** 根据关键字触发相关话题，促进深入讨论。
+4. **视频通话：** 结合数字人技术，提供更自然的交流体验。
+
+
+
+**🔄项目实施计划路线**
+
+1. **普通对话：**⬇
+2. **话题讨论：**⬇
+3. **情景对话：**⬇
+4. **视频通话：**⬇
+
+5. **其他功能**
+
+
+
+**🚀主要技术路线：**
+
+1. 多模态大语言模型
+2. TTS语音合成技术
+3. ASR语音识别技术
+4. Xtuner微调
+5. LMDeploy推理加速
+6. OpenXlab部署Demo
+
+
+
+**💕 致谢**
+
+- **上海人工智能实验室**
+- [InternLM](https://github.com/InternLM/InternLM)
+- [xtuner](https://github.com/InternLM/xtuner)
+- [LMDeploy](https://github.com/InternLM/LMDeploy)
+
+
+
