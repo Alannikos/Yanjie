@@ -1,57 +1,41 @@
-**项目名称：** 言界 - 英语智能学习助手
+**Project Name:** YanJie - Intelligent English Learning Assistant
 
+**Project Overview:** YanJie is a comprehensive intelligent English learning assistant designed to provide an immersive English learning experience through features like situational dialogues, mock exams, AI reading companion, AI writing companion, and AI translation. The project will be implemented based on tools such as **Xtuner** and **LMDeploy** from the Shanghai Artificial Intelligence Laboratory, combined with **TTS** and **ASR** technologies, and using the **InternLM2** series models.
 
+**🔥 Project Goals:**
 
-**项目概述：** 言界是一款综合性的英语智能学习助手，旨在通过情景对话、模拟考试、AI伴读、AI伴写和AI翻译等功能，为用户提供沉浸式的英语学习体验。该项目将基于由上海人工智能实验室的**Xtuner，LMDeploy**等工具，结合**TTS，ASR**，并使用**InternLM2**系列模型进行实现。
+1. Provide situational dialogues and topic discussions to enhance users' speaking skills.
+2. Help users assess and improve their English proficiency through mock exams.
+3. Offer personalized reading and writing companion services using AI technology.
+4. Implement AI translation to facilitate cross-language communication.
 
+**🌟 Main Features:**
 
+1. **Regular Dialogue:** Support for everyday voice conversations.
+2. **Situational Dialogue:** Use images to guide the model in related thematic dialogues, simulating real-life scenarios.
+3. **Topic Discussion:** Trigger related topics based on keywords to promote in-depth discussions.
+4. **Video Call:** Combine digital human technology to provide a more natural communication experience.
 
-**🔥项目目标：**
+**🔄 Project Implementation Roadmap:**
 
-1. 提供情景对话和话题讨论，增强用户的口语交流能力。
-2. 通过模拟考试，帮助用户评估和提高英语水平。
-3. 结合AI技术，提供个性化的伴读和伴写服务。
-4. 实现AI翻译功能，促进跨语言交流。
+1. **Regular Dialogue:** ⬇
+2. **Topic Discussion:** ⬇
+3. **Situational Dialogue:** ⬇
+4. **Video Call:** ⬇
+5. **Other Features**
 
+**🚀 Main Technical Routes:**
 
+1. Multimodal Large Language Model
+2. TTS (Text-to-Speech) Synthesis Technology
+3. ASR (Automatic Speech Recognition) Technology
+4. Xtuner Fine-Tuning
+5. LMDeploy Inference Acceleration
+6. OpenXlab Deployment Demo
 
-**🌟主要功能：**
+**💕 Acknowledgements**
 
-1. **普通对话：** 支持日常语音对话。
-2. **情景对话：** 利用图片引导大模型进行相关主题对话，模拟真实场景。
-3. **话题讨论：** 根据关键字触发相关话题，促进深入讨论。
-4. **视频通话：** 结合数字人技术，提供更自然的交流体验。
-
-
-
-**🔄项目实施计划路线**
-
-1. **普通对话：** ⬇
-2. **话题讨论：** ⬇
-3. **情景对话：** ⬇
-4. **视频通话：** ⬇
-
-5. **其他功能**
-
-
-
-**🚀主要技术路线：**
-
-1. 多模态大语言模型
-2. TTS语音合成技术
-3. ASR语音识别技术
-4. Xtuner微调
-5. LMDeploy推理加速
-6. OpenXlab部署Demo
-
-
-
-**💕 致谢**
-
-- **上海人工智能实验室**
+- **Shanghai Artificial Intelligence Laboratory**
 - [InternLM](https://github.com/InternLM/InternLM)
 - [xtuner](https://github.com/InternLM/xtuner)
 - [LMDeploy](https://github.com/InternLM/LMDeploy)
-
-
-
