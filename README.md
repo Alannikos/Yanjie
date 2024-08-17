@@ -1,6 +1,6 @@
 ## 一. 项目介绍
 
-![1](/root/Project_Yanjie/Repo/Yanjie/assets/1.png)
+![1](./assets/1.png)
 
 
 ### 1.1 **项目名称**
@@ -29,17 +29,17 @@
 
 1. **普通对话：** ⬇
 
-![2](/root/Project_Yanjie/Repo/Yanjie/assets/2.png)
+![2](./assets/2.png)
 
 
 1. **情境对话：** ⬇
 
-![3](/root/Project_Yanjie/Repo/Yanjie/assets/3.png)
+![3](./assets/3.png)
 
 
 1. **视频通话：** ⬇
 
-![4](/root/Project_Yanjie/Repo/Yanjie/assets/4.png)
+![4](./assets/4.png)
 
 
 1. **其他功能...**
