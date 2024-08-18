@@ -8,11 +8,19 @@
 #     main()
 
 import streamlit as st
+import os
 
-base_path = './SmartAssistant'
-os.system(f'git clone https://code.openxlab.org.cn/Alannikos/SmartAssistant.git {base_path}')
-os.system(f'cd {base_path} && git lfs pull')
-os.system("pip install -r requirement.txt")
+# LLM model
+os.system(f'git clone https://code.openxlab.org.cn/OpenLMLab/internlm2-chat-7b.git ./LLM/model/')
+os.system(f'cd ./LLM/model/ && git lfs pull')
+
+# TTS model
+os.system(f'cd ./TTS/weights/ && git lfs install')
+os.system(f'git clone https://huggingface.co/2Noise/ChatTTS ./TTS/weights/')
+
+# ASR model
+os.system(f'cd ./ASR/SenseVoiceSmall/ && git lfs install')
+os.system(f'git clone https://huggingface.co/FunAudioLLM/SenseVoiceSmall ./ASR/SenseVoiceSmall/')
 
 
 

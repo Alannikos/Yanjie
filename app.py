@@ -8,16 +8,21 @@
 #     main()
 
 import streamlit as st
-
-os.system("pip install -r requirement.txt")
-
-# LLM model
-os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ../LLM/model')
-os.system(f'cd ../LLM/model && git lfs pull')
+import os
 
 # LLM model
-os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ../LLM/model')
-os.system(f'cd ../LLM/model && git lfs pull')
+os.system(f'git clone https://code.openxlab.org.cn/OpenLMLab/internlm2-chat-7b.git ./LLM/model/')
+os.system(f'cd ./LLM/model/ && git lfs pull')
+
+# TTS model
+os.system(f'cd ./TTS/weights/ && git lfs install')
+os.system(f'git clone https://huggingface.co/2Noise/ChatTTS ./TTS/weights/')
+
+# ASR model
+os.system(f'cd ./ASR/SenseVoiceSmall/ && git lfs install')
+os.system(f'git clone https://huggingface.co/FunAudioLLM/SenseVoiceSmall ./ASR/SenseVoiceSmall/')
+
+
 
 def main():
     # 页面标题
