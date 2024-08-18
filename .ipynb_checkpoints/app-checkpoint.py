@@ -9,6 +9,13 @@
 
 import streamlit as st
 
+base_path = './SmartAssistant'
+os.system(f'git clone https://code.openxlab.org.cn/Alannikos/SmartAssistant.git {base_path}')
+os.system(f'cd {base_path} && git lfs pull')
+os.system("pip install -r requirement.txt")
+
+
+
 def main():
     # 页面标题
     st.title("言界-英语智能学习助手")

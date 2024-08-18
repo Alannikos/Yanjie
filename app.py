@@ -9,6 +9,16 @@
 
 import streamlit as st
 
+os.system("pip install -r requirement.txt")
+
+# LLM model
+os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ../LLM/model')
+os.system(f'cd ../LLM/model && git lfs pull')
+
+# LLM model
+os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ../LLM/model')
+os.system(f'cd ../LLM/model && git lfs pull')
+
 def main():
     # 页面标题
     st.title("言界-英语智能学习助手")
