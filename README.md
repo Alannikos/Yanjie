@@ -81,7 +81,15 @@ streamlit run app.py --server.address=127.0.0.1 --server.port=6006
 ## 三. **💕 致谢**
 
 - **上海人工智能实验室**
+- [InternLM/Tutorial: LLM&VLM Tutorial](https://github.com/InternLM/Tutorial)
 - [OpenXlab](https://openxlab.org.cn/)
 - [InternLM](https://github.com/InternLM/InternLM)
 - [xtuner](https://github.com/InternLM/xtuner)
 - [LMDeploy](https://github.com/InternLM/LMDeploy)
+- [Linly-Talker: Digital Avatar Conversational System](https://github.com/Kedreamix/Linly-Talker)
+- [Streamer-Sales: Streamer-Sales](https://github.com/PeterH0323/Streamer-Sales)
+- [A Multi-modal RAG Project](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset)
+- [OpenXLab-IntelligentSalesAssistant](https://github.com/wux-labs/OpenXLab-IntelligentSalesAssistant)
+- [EchoMimic](https://huggingface.co/BadToBest/EchoMimic)
+- [ChatTTS](https://huggingface.co/2Noise/ChatTTS)
+- [SenseVoice](https://huggingface.co/FunAudioLLM/SenseVoiceSmall)
