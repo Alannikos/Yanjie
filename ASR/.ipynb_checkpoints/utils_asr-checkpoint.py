@@ -9,7 +9,7 @@ from datetime import datetime
 from ASR.FunASR.funasr import AutoModel
 from audio_recorder_streamlit import audio_recorder
 
-model_dir = "../SenseVoiceSmall"
+model_dir = ".ASR/SenseVoiceSmall"
 
 def asr_show_audio(wav_path, sample_rate=24000):
     if wav_path is None:
@@ -22,7 +22,7 @@ def asr_show_audio(wav_path, sample_rate=24000):
 
 def save_wavs(wav_bytes):
     save_file = datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".wav"
-    wav_save_path = str(Path("../../Work_dirs/ASR").joinpath(save_file).absolute())
+    wav_save_path = str(Path("./Work_dirs/ASR").joinpath(save_file).absolute())
     
     audio_segment = AudioSegment.from_wav(io.BytesIO(wav_bytes))
     audio_segment.export(wav_save_path, format='wav')

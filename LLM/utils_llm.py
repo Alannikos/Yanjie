@@ -24,7 +24,7 @@ def on_btn_click():
     st.session_state.theme_selected = '无'
 
 def get_avatar(person):
-    avatar = f"../Statics/avatars/{person}.png"
+    avatar = f"./Statics/avatars/{person}.png"
     return avatar
 # 配置设置
 @dataclass
@@ -55,10 +55,10 @@ def prepare_llm_generation_config():
 # 加载模型
 @st.cache_resource
 def load_model():
-    model = (AutoModelForCausalLM.from_pretrained('./model',
+    model = (AutoModelForCausalLM.from_pretrained('./LLM/model',
                                                   trust_remote_code=True).to(
                                                       torch.bfloat16).cuda())
-    tokenizer = AutoTokenizer.from_pretrained('./model',
+    tokenizer = AutoTokenizer.from_pretrained('./LLM/model',
                                               trust_remote_code=True)
     return model, tokenizer
 # 历史会话合并

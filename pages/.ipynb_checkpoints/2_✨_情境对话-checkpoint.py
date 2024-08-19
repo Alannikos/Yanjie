@@ -1,6 +1,5 @@
 # isort: skip_file
 import sys
-sys.path.append("../")
 import copy
 import warnings
 from datetime import datetime

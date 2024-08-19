@@ -1,6 +1,6 @@
 import sys
-sys.path.append("../TTS")
-
+import os
+sys.path.append("./TTS")
 
 # ==================================================================
 #                             第三方库导入配置
@@ -18,16 +18,16 @@ from IPython.display import Audio  # 测试音频是否正确
 
 # 这里可以做成一个init
 chat = ChatTTS.Chat()
-chat.load(compile=False, source='custom', custom_path='./weights/ChatTTS')  # 用这个最新的配置
+chat.load(compile=False, source='custom', custom_path='./TTS/weights/ChatTTS')  # 用这个最新的配置
 
 # 模型侧边栏选择
 def prepare_tts_generation_config():
     model_type = st.selectbox("助手音色", key="config_voice_model_type", options=["温柔御姐", "可爱甜心"])
 
     if model_type == "温柔御姐":
-        return "./speaker/seed_742_restored_emb.pt"
+        return "./TTS/weights/speaker/seed_742_restored_emb.pt"
     else:
-        return "./speaker/seed_1089_restored_emb.pt"
+        return "./TTS/weights/speaker/seed_1089_restored_emb.pt"
 
 # 展示音频文件
 def show_audio(wav_save_path, sample_rate = 24000):
@@ -58,7 +58,7 @@ def text2audio(text, speaker_type=None, oral=3, laugh=3, bk=3):
         5. wav_save_path: 音频文件保存地址
     """
     if speaker_type == None:
-        speaker = chat._encode_spk_emb(torch.load('./speaker/seed_1089_restored_emb.pt'))
+        speaker = chat._encode_spk_emb(torch.load('./TTS/weights/speaker/seed_1089_restored_emb.pt'))
     else:
         speaker = chat._encode_spk_emb(torch.load(speaker_type))
 
@@ -84,7 +84,7 @@ def text2audio(text, speaker_type=None, oral=3, laugh=3, bk=3):
         params_infer_code=params_infer_code,
     )
     save_file = datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".wav"
-    wav_save_path = str(Path("../Work_dirs/TTS").joinpath(save_file).absolute())
+    wav_save_path = str(Path("./Work_dirs/TTS").joinpath(save_file).absolute())
     save_wavs(wavs, wav_save_path)
     
     return wav_save_path
