@@ -10,16 +10,18 @@
 import streamlit as st
 import os
 
+os.system(f'git lfs install')
+
 # LLM model
 os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ./LLM/model/')
 os.system(f'cd ./LLM/model/ && git lfs pull')
 
 # TTS model
-os.system(f'git lfs install')
+os.system(f'cd ~')
 os.system(f'git clone https://hf-mirror.com/2Noise/ChatTTS ./TTS/weights/ChatTTS')
 
 # ASR model
-os.system(f'git lfs install')
+os.system(f'cd ~')
 os.system(f'git clone https://hf-mirror.com/FunAudioLLM/SenseVoiceSmall ./ASR/SenseVoiceSmall/')
 
 
