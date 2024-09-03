@@ -11,7 +11,7 @@ import streamlit as st
 import os
 
 # LLM model
-os.system(f'git clone https://code.openxlab.org.cn/OpenLMLab/internlm2-chat-7b.git ./LLM/model/')
+os.system(f'git clone https://code.openxlab.org.cn/Alannikos/yanjie_1_8b.git ./LLM/model/')
 os.system(f'cd ./LLM/model/ && git lfs pull')
 
 # TTS model
